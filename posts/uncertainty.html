@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Post - Alfred Dahal</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/simple-blog-template.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Alfred Dahal</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Post Content Column -->
+        <p class="col-lg-12">
+
+          <!-- Blog Post -->
+
+          <!-- Title -->
+          <h1 class="post-title">Addressing a misconception regarding the Uncertainty Principle</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            by Alfred Dahal
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p><span class="glyphicon glyphicon-time"></span> Posted on August 12, 2024</p>
+
+          <hr>
+
+          <!-- Post Content -->
+          
+        <p>Almost everyone who has taken modern physics classes in high school has very likely come across the following inequality:</p>
+
+        <p>$$ \Delta\text{x }\Delta\text{p} \ge \hbar $$</p>
+
+        <p>This inequality is called Heisenberg’s Uncertainty Principle, and it is amongst the most important inequalities in all of physics. Heisenberg’s Uncertainty Principle states that both the position and the momentum of a particle cannot be measured with considerable accuracy simultaneously, and it is a direct consequence of the wave-particle duality. That means, the more accurately we measure the momentum of the particle, the more obscure its position becomes, and vice versa. But what if I told you that the notation above is actually quite a sloppy way of representing Heisenberg’s Uncertainty Principle?</p>
+
+        <p>To understand why, we first need to look at how the actual Heisenberg’s Uncertainty Principle looks like:</p>
+
+        <p>$$ \sigma_{x}\sigma_{p}\ge \hbar $$</p>
+
+        <p>Where  and  corresponds to the standard deviation of the data obtained from repeated measurements of the x and p of the particle.</p>
+
+        <p>The standard deviation is a measure of how dispersed or scattered the given data is, with respect to the mean. In the context of position and momentum,  and  gives us the respective measure of how scattered the values of the x and p are, with respect to their average values, or in quantum mechanical terms, the expectation values of the position and momentum. (Please do not get worked up with the names, they’re just terminologies that physicists use for simplicity’s sake.)</p>
+
+        <p>The real question is - what is the physical meaning of the standard deviation of x and p? The answer lies on what we are doing to the particle – we are taking repeated measurements of its position and momentum together. And somehow (specifically, by virtue of the wave-particle duality), the repeated measurements have ended up differing from one another, which leads to a non-zero standard deviation for both of the variables. (I would like to clarify that if we had obtained consistent values for the position and momentum after each measurement, the standard deviation of both the position and the momentum would’ve been zero – which is actually not what happens when measuring x and p of quantum particles, and this is an experimental result). So there is always a degree of uncertainty involved, when we are measuring the x and the p of the particle simultaneously and thus, we can come to the conclusion that the standard deviations  and  represent the uncertainties in the measurement of the position and the momentum of the particle respectively.</p>
+
+        <p>With this, we can conclude by saying that the delta notation for Heisenberg’s uncertainty principle is a very sloppy way of saying “uncertainty in the x and p”. The real way of expressing the uncertainties, is via the standard deviation of the x and the p.</p>
+
+          <hr>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Alfred Dahal 2024</p>
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- MathJax -->
+    <script src="../js/load-mathjax.js" async></script>
+
+  </body>
+
+</html>
